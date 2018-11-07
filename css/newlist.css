@@ -1,0 +1,124 @@
+
+.show_list_title{
+	display:flex;
+	height:120px;
+	font-size:20px;
+	font-weight:600;
+    flex-direction: row;
+	background-color:white;
+	justify-content: center;
+	align-items:center;
+	border-bottom:3px #b5b5b6 solid;
+}
+.show_list_title span{
+	float:left;
+}
+.show_news{
+	position:relative;
+	width:100%;
+	padding:10% 10% 5% 10%;
+}
+.show_news_list{
+	position:relative;
+	width:100%;
+}
+.show_img2_mark_m{
+  position: absolute;
+  text-align: center;
+  width: 218px;
+  height: 35px;
+  left: 0;
+  top: -17px;
+  z-index: 1;
+  line-height: 35px;
+  color: #fff;
+  background-color: #000;
+  font-size: 18px;
+  font-family: "en_medium","NotoSansHans-Regular";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.new_pop2_box_m{
+  position: relative;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+}
+.new_img{
+	width:100%;
+	height:100%;
+}
+.bottom_new_des{
+  position: relative;
+  width: 100%;
+  padding-left: 7%;
+  padding-right: 7%;
+  box-sizing: border-box;
+  font-family: "en_medium","NotoSansHans-Regular";
+  background: #f8f8f8;
+  text-transform: uppercase;
+  z-index: 1;
+  cursor: pointer;
+}
+.bottom_new_des1{
+  font-size: 24px;
+  padding-top: 40px;
+  font-weight:800;
+  position: relative;z-index: 2;
+  letter-spacing: 3px;
+}
+.bottom_new_des2{
+  font-size: 20px;
+  line-height:28px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 2px;
+display:-webkit-box;
+-webkit-line-clamp:3;
+-webkit-box-orient:vertical;
+overflow:hidden;
+padding:3px 0;
+}
+.mouse_pop_m{
+  width: 100%;
+  padding:20px 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.icons_sm{
+	display:flex;
+	position:relative;
+	padding-top:2px;
+    flex-direction: row;
+	width:50%;
+	float:left;
+	height:40px;
+	line-height:40px;
+}
+.icons_sm img{
+	width:72.5%;
+	height:50%;
+}
+.date_time_m{
+	display:flex;
+	font-size:18px;
+	width:50%;
+	justify-content: center;
+	height:40px;
+	line-height:40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.animated_m{
+	position:absolute;
+	left:0;
+	top:9px;
+	width:52%;
+	height:50%;
+}

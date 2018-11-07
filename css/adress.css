@@ -1,0 +1,155 @@
+
+  .osubmit-item_bd {
+    margin-top: 30px;
+  }
+  .osubmit-item_bd .addr-type li {
+    float: left;
+    padding: 0;
+    width: 33.33333333%;
+    padding-left: 25px;
+    margin-bottom: 10px;
+  }
+  .osubmit-item_bd .addr-type li:nth-child(3n+1) {
+    padding-left: 0;
+  }
+  .osubmit-item_bd .address-item.active {
+    color: #fff;
+    background-color: #000;
+  }
+  .addr-type {
+    margin-top: 20px;
+  }
+  .osubmit-item_bd  ul.nav-tabs {
+    border-bottom: 1px solid #000;
+    margin-bottom: 0;
+  }
+  .osubmit-item_bd  ul.nav-tabs li {
+    float: left;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: -1px;
+  }
+  .osubmit-item_bd .nav-tabs>li>a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    color: #fff;
+    letter-spacing:6px;
+  }
+  .osubmit-item_bd .nav-tabs>li>a:focus, .osubmit-item_bd .nav-tabs>li>a:hover {
+    background: #000;
+    border-color: #000;
+  }
+  .osubmit-item_bd .nav-tabs>li.active>a {
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    border-bottom: 0;
+  }
+  .osubmit-item_bd .nav-tabs>li.active>a:hover, .osubmit-item_bd .nav-tabs>li.active>a:focus {
+    background: #fff;
+    border-color: #000;
+    border-bottom: 0;
+  }
+  .osubmit-item_bd.nav-tabs>li.active:first-child>a {
+    border-left: 1px solid #000;
+  }
+  .address-item {
+    width: 100%;
+    border: 1px solid #000;
+    padding: 30px 0 45px 35px;
+    letter-spacing: 2px;
+    color: #000;
+    border-bottom-right-radius: 18px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .address-item .checked-addr {
+    display: none;
+  }
+  .address-item.active .checked-addr {
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+  }
+  .address-item_index {
+    font-size: 12px;
+    margin-bottom: 35px;
+  }
+  .address-item_info {
+    font-size: 14px;
+  }
+  .address-item_phone span {
+    margin-right: 20px;
+  }
+  .addr-stTel span {
+    margin-right: 20px;
+  }
+  
+  .address-item_detail {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  .more-address {
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    color: #808080;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 15px 0;
+    cursor: pointer;
+    position: relative;
+  }
+  .more-address img {
+    position: absolute;
+    left: 50%;
+    margin-left: -18px;
+    bottom: -18px;
+  }
+  .more-address img.active {
+    transform: rotate(180deg);
+    bottom: 0;
+  }
+
+  /* address modal */
+.addr-image .modal-header {
+  border-bottom: 0;
+}
+.addr-image .modal-footer {
+  border-top: 0;
+}
+.addr-image .modal-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.addr-image .modal-body{
+  text-align: center;
+}
+  /* .osubmit-payment {
+    margin-top: 110px;
+  }
+  .osubmit-item_title .pull-left .payment-tips {
+    font-size: 12px;
+    margin-left: 50px;
+    color: #808080;
+    text-transform: uppercase;
+  }
+  .osubmit-item_title .payment-tips em {
+    font-style: normal;
+    text-decoration: underline;
+    margin-left: 20px;
+  }
+   */

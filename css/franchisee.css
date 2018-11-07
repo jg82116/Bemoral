@@ -1,0 +1,926 @@
+/***é“¶è¡Œé—´è¿ž**/
+.franchisee-bank-view {
+  position: relative;
+  font-size: 14px;
+}
+.franchisee-bank-view div:after {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+.franchisee-bank-view .content {
+  position: relative;
+}
+.franchisee-bank-view .content .s-label {
+  position: relative;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  color: #5282ea;
+  padding-left: 10px;
+}
+.franchisee-bank-view .content .s-line {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: #5282ea;
+}
+.franchisee-bank-view .content .layout-form {
+  position: relative;
+  height: 34px;
+  line-height: 34px;
+  width: 100%;
+}
+.franchisee-bank-view .content .layout-form .form-left {
+  position: relative;
+  height: 100%;
+  width: 114px;
+  text-align: right;
+  float: left;
+  font-size: 14px;
+  color: #424242;
+}
+.franchisee-bank-view .content .layout-form .form-right {
+  position: relative;
+  height: 100%;
+  float: left;
+  margin-left: 10px;
+}
+.franchisee-bank-view .content .input-w {
+  width: 260px;
+}
+.franchisee-bank-view .content .input-2w {
+  width: 520px;
+}
+.franchisee-bank-view .content .input-ww {
+  width: 700px;
+}
+.franchisee-bank-view .content .layout-form .audit-a {
+  color: #30b933;
+}
+.franchisee-bank-view .content .layout-form .audit-b {
+  color: #f35841;
+}
+.franchisee-bank-view .content .layout-form .audit-c {
+  color: #424242;
+}
+.franchisee-bank-view .content .layout-form .audit-d {
+  color: red;
+}
+.franchisee-bank-view .content .layout-form .asterisk {
+  color: #f94206;
+}
+.franchisee-bank-view .content .form-control {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  width: 100%;
+  height: 30px;
+  line-height: normal;
+  padding: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.franchisee-bank-view .content .form-control:focus {
+  border-color: #2baab1;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015), 0 0 3px #2baab1;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015), 0 0 3px #2baab1;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015), 0 0 3px #2baab1;
+}
+.franchisee-bank-view .content ._table {
+  position: relative;
+  width: 98%;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  margin-left: 1%;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-collapse: separate;
+  font-size: 13px;
+}
+.franchisee-bank-view .content ._table thead tr {
+  position: relative;
+  background: white;
+  height: 48px;
+  line-height: 48px;
+  font-weight: bolder;
+  border-collapse: separate;
+}
+.franchisee-bank-view .content ._table thead tr td {
+  position: relative;
+  border-collapse: separate;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.franchisee-bank-view .content ._table tbody tr {
+  background: white;
+  height: 34px;
+  line-height: 34px;
+}
+.franchisee-bank-view .content ._table tbody tr:nth-child(2n - 1) {
+  background: #f9f9f9;
+}
+.franchisee-bank-view .content ._table tbody tr td {
+  border: 1px solid #ccc;
+  border-collapse: separate;
+  border-width: 1px 0 0 0;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+.franchisee-bank-view .content ._table tbody tr:last-child td {
+  border-collapse: separate;
+  border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+}
+.franchisee-bank-view .content ._table ._a {
+  position: relative;
+  width: 42px;
+  padding: 0 0 0 8px;
+}
+.franchisee-bank-view .content ._table ._b {
+  position: relative;
+  width: 70px;
+  line-height: 20px;
+}
+.franchisee-bank-view .content ._table ._b_b {
+  position: absolute;
+  right: 10px;
+  top: calc(40%);
+}
+.franchisee-bank-view .content md-radio-button {
+  display: inline-block;
+}
+.franchisee-bank-view .content md-radio-button .md-label {
+  margin-left: 20px;
+}
+.franchisee-bank-view .content md-radio-button .md-container {
+  width: 16px;
+  height: 16px;
+}
+.franchisee-bank-view .content md-radio-button .md-off,
+md-radio-button .md-on {
+  width: 16px;
+  height: 16px;
+}
+.franchisee-bank-view .content .layout-form .form-right .dropdown-layout {
+  width: 100%;
+}
+.franchisee-bank-view .content .layout-form .form-right .dropdown-layout .dropdown-down-label {
+  min-width: calc(72%);
+  width: calc(72%);
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.franchisee-bank-view .content .layout-form .form-right .dropdown-layout .dropdown-down-btn {
+  width: 28px;
+  min-width: 28px;
+  border-radius: 0 4px 4px 0 !important;
+}
+.franchisee-bank-view .content .layout-form .form-right .dropdown-layout .dropdown-menu {
+  /*width: 100%;*/
+  /*min-width: 70px;*/
+}
+.franchisee-bank-view .content .layout-form .form-right .dropdown-layout .dropdown-menu .menu-item {
+  position: relative;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.franchisee-bank-view .content .layout-form .form-right .dropdown-layout .dropdown-menu .menu-item:hover,
+.franchisee-bank-view .content .layout-form .form-right .dropdown-layout .dropdown-menu .menu-item:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+.franchisee-bank-view .content .layout-form .form-right .dropdown-layout .dropdown-submenu > .sub-child:after {
+  position: absolute;
+  display: block;
+  content: " ";
+  width: 0;
+  height: 0;
+  top: 50%;
+  right: 10px;
+  margin-top: -5px;
+  border: 5px solid transparent;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+}
+.franchisee-bank-view .content .layout-form .form-right .dropdown-layout .dropdown-submenu .sub-child:focus,
+.franchisee-bank-view .content .layout-form .form-right .dropdown-layout .dropdown-submenu .sub-child:active {
+  outline: none;
+}
+.bank-event-between-category .menu-item {
+  position: relative;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+.bank-event-between-category .menu-item:hover,
+.bank-event-between-category .menu-item:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
+  outline: none;
+}
+.bank-event-between-category .dropdown-submenu > .sub-child:after {
+  position: absolute;
+  display: block;
+  content: " ";
+  width: 0;
+  height: 0;
+  top: 50%;
+  right: 10px;
+  margin-top: -5px;
+  border: 5px solid transparent;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+}
+.bank-event-between-category .dropdown-submenu .sub-child:focus,
+.bank-event-between-category .dropdown-submenu .sub-child:active {
+  outline: none;
+}
+.franchisee-bank-view .content .layout-form .form-right ._w {
+  position: relative;
+  width: calc(45%);
+  height: 100%;
+  float: left;
+}
+.franchisee-bank-view .content .layout-form .form-right .bootstrap-select {
+  width: 100% !important;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+.franchisee-bank-view .content .h-auto {
+  height: auto;
+  min-height: 34px;
+}
+.franchisee-bank-view .content .layout-form .form-right .logo-icon {
+  border: 1px dashed #bfbfbf;
+  width: 81px;
+  height: 81px;
+  position: relative;
+  border-radius: 4px;
+  background: #fdfbfb;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  float: left;
+  margin-right: 5px;
+}
+.franchisee-bank-view .content .layout-form .form-right .logo-icon:focus,
+.franchisee-bank-view .content .layout-form .form-right .logo-icon:active {
+  outline: none;
+}
+.franchisee-bank-view .content .layout-form .form-right .logo-icon img {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 4px;
+}
+.franchisee-bank-view .content .layout-form .form-right .logo-icon .__text {
+  position: absolute;
+  width: 100%;
+  top: 45px;
+  font-size: 12px;
+}
+.franchisee-bank-view .content .layout-form .form-right .logo-icon .icon-remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+}
+.franchisee-bank-view .content .layout-form .form-right .logo-icon:hover .icon-remove {
+  display: block;
+}
+.franchisee-bank-view .content .layout-form .form-right .logo-icon .icon-remove:focus,
+.franchisee-bank-view .content .layout-form .form-right .logo-icon .icon-remove:active {
+  outline: none;
+}
+.franchisee-bank-view .content .layout-form .form-right .logo-icon .file-add {
+  position: absolute;
+  top: 20px;
+  left: calc(42%);
+  font-size: 18px;
+  color: #949393;
+}
+.franchisee-bank-view .content .layout-form .form-right .logo-icon .__file {
+  position: absolute;
+  left: -3000px;
+}
+.franchisee-bank-view .content .layout-form .form-right .__file {
+  position: absolute;
+  left: -3000px;
+}
+.franchisee-bank-view .content .layout-form .form-right .logo-icon .__progressbar {
+  position: absolute;
+  width: calc(90%);
+  bottom: 14px;
+  left: 5px;
+  top: 5px;
+  border-radius: 4px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+.franchisee-bank-view .content .layout-form ._checkbox {
+  position: absolute;
+  height: 16px;
+  line-height: 16px;
+  top: 50%;
+  margin-top: -8px;
+}
+.franchisee-bank-view .content .layout-form ._checkbox .btn {
+  width: 16px;
+  height: 16px;
+  min-width: 16px !important;
+}
+.franchisee-bank-view .content .layout-form ._checkbox .glyphicon {
+  width: 10px !important;
+  left: -4px !important;
+  top: -1px !important;
+}
+.franchisee-bank-view .content .layout-form ._checkbox ._checkbox_label {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 1px;
+  left: 20px;
+  font-size: 12px;
+  width: 64px;
+  height: 16px;
+  line-height: 16px;
+}
+.franchisee-bank-view .content .layout-form ._checkbox .__badge {
+  position: absolute;
+  top: 4px;
+  left: 74px;
+}
+.franchisee-bank-view .content .layout-form ._checkbox ._checkbox_label:focus,
+.franchisee-bank-view .content .layout-form ._checkbox ._checkbox_label:active {
+  outline: none;
+}
+.franchisee-bank-view .content .layout-form .a-left {
+  margin-left: 10px;
+}
+.franchisee-bank-view .content .layout-form .disabled-label {
+  color: #b3b0b0;
+}
+.franchisee-bank-view .content .layout-form .fee-rate-tooltip {
+  position: absolute;
+  top: 32px;
+  left: 40px;
+}
+.franchisee-bank-view .content .layout-form .numeric-error {
+  color: #ef4242;
+}
+.franchisee-info-dialog .modal-dialog .modal-header {
+  background: white;
+  color: #666;
+}
+.franchisee-info-dialog .modal-body {
+  text-align: left;
+  padding: 8px;
+}
+.aa {
+  color: #424242;
+  margin-left: 9px;
+  width: 200px;
+}
+.merchant-log {
+  width: 100%;
+  height: 110px;
+}
+.merchant-log .content {
+  height: 25px;
+}
+.merchant-log .content .headOne {
+  margin-left: 3px;
+  float: left;
+  height: 25px;
+}
+.merchant-log .content .headTwo {
+  margin-left: 2px;
+  float: left;
+  height: 25px;
+}
+.merchant-log .content .headThree {
+  margin-left: 9px;
+  float: left;
+  width: 270px;
+  height: 25px;
+}
+.merchant-log .content .headFour {
+  margin-left: 3px;
+  float: left;
+  height: 25px;
+}
+.merchant-log .content .headFive {
+  margin-left: 2px;
+  float: left;
+  height: 25px;
+}
+.merchant-log .content .headSix {
+  margin-left: 9px;
+  height: 25px;
+}
+.franchisee-bank-view .dropdown-menu.open {
+  z-index: 99999;
+}
+/*****--æ¨¡å— start--*/
+.franchisee-bank-view .content .part_layout {
+  position: relative;
+  border-radius: 4px;
+  width: 700px;
+  border: 1px solid #5391c4;
+  margin: 10px 0;
+  background: white;
+}
+.franchisee-bank-view .content .part_layout ._header {
+  position: relative;
+  /*border-radius: 4px;*/
+  height: 40px;
+  line-height: 40px;
+  background: #5391c4;
+}
+.franchisee-bank-view .content .part_layout ._header ._label {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 10px;
+}
+.franchisee-bank-view .content .part_layout ._header ._checkbox_layout {
+  position: absolute;
+  right: 82px;
+  height: 100%;
+  top: 0;
+  /*top: calc(50% - 10px);*/
+}
+._header ._checkbox_layout .bootstrap-select {
+  width: 200px!important;
+}
+.franchisee-bank-view .content .part_layout ._header ._checkbox_layout ._checkbox {
+  position: absolute;
+  height: 16px;
+  line-height: 16px;
+  top: 50%;
+  margin-top: -8px;
+  width: 72px;
+  color: white;
+}
+.franchisee-bank-view .content .part_layout ._header ._checkbox_layout ._checkbox ._disabled {
+  cursor: not-allowed !important;
+}
+.franchisee-bank-view .content .part_layout ._header ._checkbox_layout ._checkbox .btn {
+  width: 16px;
+  height: 16px;
+  min-width: 16px !important;
+}
+.franchisee-bank-view .content .part_layout ._header ._checkbox_layout ._checkbox .glyphicon {
+  width: 10px !important;
+  left: -4px !important;
+  top: -1px !important;
+}
+.franchisee-bank-view .content .part_layout ._header ._checkbox_layout ._checkbox ._checkbox_label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+}
+.franchisee-bank-view .content .part_layout ._header ._checkbox_layout ._checkbox ._checkbox_label:focus,
+.franchisee-bank-view .content .part_layout ._header ._checkbox_layout ._checkbox ._checkbox_label:active {
+  outline: none;
+}
+.franchisee-bank-view .content .part_layout ._header ._action {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 100px;
+  top: calc(36%);
+  right: 10px;
+  background: white;
+  cursor: pointer;
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -ms-transition: all .6s ease;
+  -o-transition: all .6s ease;
+}
+.franchisee-bank-view .content .part_layout ._header ._action .fa {
+  font-size: 20px;
+  position: absolute;
+  left: calc(42%);
+  top: calc(41%);
+}
+.franchisee-bank-view .content .part_layout ._header ._action:focus,
+.franchisee-bank-view .content .part_layout ._header ._action:active {
+  outline: none;
+}
+.franchisee-bank-view .content .part_layout ._header ._expand {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.franchisee-bank-view .content .part_layout ._part_detail {
+  height: 0;
+  overflow: hidden;
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -ms-transition: all .6s ease;
+  -o-transition: all .6s ease;
+}
+.franchisee-bank-view .content .part_layout ._open {
+  height: auto;
+}
+.franchisee-bank-view .content .part_layout ._part_detail ._hr {
+  position: relative;
+  margin: 10px;
+  height: 1px;
+  background: #5998f9;
+}
+/*****--æ¨¡å— end--*/
+.franchisee-view ._a0 {
+  text-decoration: underline;
+  color: #2f2ff3;
+}
+.franchisee-view table tbody td {
+  /*padding: 10px 8px !important;*/
+}
+.franchisee-view table thead > tr > th {
+  height: 40px !important;
+  background: white !important;
+}
+.franchisee-view table thead > tr > th .th-inner {
+  padding: 0 5px !important;
+  line-height: 40px !important;
+}
+.franchisee-dialog .modal-dialog {
+  width: 700px;
+}
+.franchisee-dialog .modal-dialog .modal-content {
+  background: white;
+}
+.franchisee-dialog .modal-dialog *:active,
+.franchisee-dialog .modal-dialog *:focus {
+  outline: none;
+}
+.franchisee-dialog .modal-dialog ._part_layout {
+  position: relative;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: #333333;
+  background: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._p_a {
+  padding-left: 10px;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._marker {
+  position: relative;
+  margin-top: 8px;
+  height: 32px;
+  line-height: 32px;
+  font-weight: bolder;
+  background: #ebebeb;
+  font-size: 14px;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._layout_form {
+  position: relative;
+  height: 38px;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._layout_form ._layout_form_left {
+  position: relative;
+  float: left;
+  width: 110px;
+  height: 100%;
+  line-height: 38px;
+  text-align: right;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._layout_form ._layout_form_right {
+  position: relative;
+  float: left;
+  height: 100%;
+  margin-left: 20px;
+  line-height: 38px;
+}
+.franchisee-dialog .modal-dialog ._part_layout .btn {
+  min-width: 90px;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._area_layout {
+  position: relative;
+  margin: 10px 0;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._area_layout ._qrcode {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  right: 0;
+  top: 0;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._area_layout ._qrcode * {
+  width: 100%;
+  height: 100%;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._a0 {
+  color: #1580e1;
+  text-decoration: underline;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._w0 {
+  position: relative;
+  width: 322px;
+  margin-left: 128px;
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._form_control {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._form_control:focus {
+  border-color: #2baab1;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015), 0 0 3px #2baab1;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015), 0 0 3px #2baab1;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015), 0 0 3px #2baab1;
+}
+.franchisee-dialog .modal-dialog ._part_layout input[disabled] {
+  cursor: default;
+  background: rgba(0, 0, 0, 0.1);
+}
+.franchisee-dialog .modal-dialog ._part_layout ._layout_form ._w1 {
+  position: relative;
+  width: 220px;
+  height: 100%;
+  float: left;
+}
+.franchisee-dialog .modal-dialog ._part_layout ._layout_form ._action {
+  position: relative;
+  float: left;
+  margin-left: 16px;
+}
+.franchisee-dialog .modal-dialog ._part_layout .popover {
+  max-width: 200px !important;
+}
+.franchisee-dialog .modal-dialog ._part_layout .popover-inner {
+  width: 200px;
+}
+.franchisee-dialog .modal-dialog ._part_layout .__badge {
+  font-size: 20px;
+}
+/*èŠ±å‘—é€‰æ‹©*/
+.huabei-title-box {
+  position: relative;
+}
+.huabei-choose-box {
+  position: absolute;
+  left: 200px;
+  top: 0;
+}
+.huabei-choose-box input {
+  width: auto;
+}
+.huabei-choose-box label {
+  margin-right: 10px;
+  color: #666;
+}
+._part_detail_pay .fee_input {
+  width: 50px;
+}
+.form-control_j {
+  height: 30px;
+}
+.franchisee-bank-view .title_dropdown {
+  position: absolute;
+  top: -2px;
+  right: 20px;
+  width: 150px;
+}
+.franchisee-bank-view .title_dropdown .btn-default {
+  font-size: 12px;
+  width: 150px;
+}
+.franchisee-bank-view .title_dropdown .dropdown-menu li {
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+}
+.franchisee-bank-view .title_dropdown .dropdown-menu li:hover {
+  background-color: #eee;
+}
+.franchisee-bank-view .center {
+  text-align: center;
+}
+.franchisee-bank-view ._table {
+  margin-left: 5%;
+}
+.franchisee-bank-view ._table td {
+  min-width: 40px!important;
+  padding-left: 5px!important;
+}
+.bank_franchisee_modal .asterisk {
+  position: relative;
+  display: inline-block;
+  width: 0px;
+  overflow: visible;
+  color: #f94206;
+  left: -9px;
+}
+.bank_franchisee_modal .modal-header {
+  background: #fff;
+  padding: 15px;
+}
+.bank_franchisee_modal .modal-title {
+  color: #666;
+  font-size: 18px;
+}
+.bank_franchisee_modal .modal-body {
+  padding: 25px;
+}
+.bank_franchisee_modal .modal-body .codeInput {
+  width: 300px;
+}
+.bank_franchisee_modal .more_info {
+  padding: 0 20px;
+}
+.bank_franchisee_modal .more_info .info_title {
+  float: left;
+  width: 28%;
+}
+.bank_franchisee_modal .more_info .info_detail {
+  float: left;
+  width: 72%;
+}
+.bank_franchisee_modal .more_info .info_title_12 {
+  float: left;
+  width: 14%;
+}
+.bank_franchisee_modal .more_info .info_detail_12 {
+  float: left;
+  width: 86%;
+}
+.bank_franchisee_modal._dragonPayModal .form-inline {
+  margin: 5px 0;
+}
+.bank_franchisee_modal._dragonPayModal .form-inline label {
+  width: 65px;
+  text-align: right;
+}
+.bank-event-between-category.dropdown-menu {
+  z-index: 9999;
+}
+.lakalaModal .layout-form:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.lakalaModal .__file {
+  display: none;
+}
+.lakalaModal .partLine {
+  position: relative;
+  height: 36px;
+  text-align: center;
+}
+.lakalaModal .partLine .partTitle {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  padding: 5px 30px;
+  font-size: 14px;
+  line-height: 30px;
+}
+.lakalaModal .partLine:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 17px;
+  width: 84%;
+  height: 1px;
+  background: #ddd;
+  margin: 0 8%;
+}
+.lakalaModal .unionSelect {
+  width: 100%;
+}
+.lakalaModal .unionSelect .btn {
+  position: relative;
+  min-width: 100%;
+  padding-right: 25px!important;
+  text-align: left;
+  font-size: 13px;
+}
+.lakalaModal .unionSelect .btn .caret {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: #999;
+}
+.lakalaModal .industryBox .childUl {
+  width: auto!important;
+}
+.lakalaModal .searchInputBox {
+  position: relative;
+  height: 34px;
+}
+.lakalaModal .searchInputBox input {
+  width: 100%;
+}
+.lakalaModal .searchInputBox .searchInputInfoBox {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  margin-bottom: 10px;
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  opacity: 0;
+  z-index: 9999;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 1px 5px #ccc;
+  transition: all 0.3s ease;
+}
+.lakalaModal .searchInputBox .searchInputInfoBox li {
+  padding: 0 5px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 34px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lakalaModal .searchInputBox .searchInputInfoBox li:hover {
+  background: #ddd;
+}
+.lakalaModal .loading {
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

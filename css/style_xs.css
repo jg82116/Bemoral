@@ -1,0 +1,16 @@
+/* 超小屏幕（手机，小于 768px） */
+@media (max-width: @screen-xs-max) {
+
+.second_menu_ul>li{
+  float: left;
+  font-family: "en_medium","NotoSansHans-Regular";
+  text-align: center;
+}
+
+.second_menu_ul li a{
+  color: #fff;
+  position: relative;
+  font-size: 14px;
+}
+
+ }

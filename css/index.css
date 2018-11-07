@@ -1,0 +1,32 @@
+.container-fluid_m #swiper5 .swiper-wrapper img{
+	width:512px;
+}
+.container-fluid_m #swiper5 .swiper-wrapper .bottom_des{
+	line-height:1.3;
+	color:white;
+	background:#000;
+	height:410px;
+}
+.container-fluid_m #swiper5 .swiper-wrapper .bottom_des .bottom_des1{
+	font-size:35px;
+	display:-webkit-box;
+	-webkit-line-clamp:2;
+	-webkit-box-orient:vertical;
+	overflow:hidden;
+}
+.container-fluid_m #swiper5 .swiper-wrapper .bottom_des .bottom_des2{
+	font-size:20px;
+	display:-webkit-box;
+	-webkit-line-clamp:3;
+	-webkit-box-orient:vertical;
+	overflow:hidden;
+}
+#container-fluid_m #swiper1 .swiper-slide{
+	width:100%;
+}
+#container-fluid_m #swiper1 .swiper-slide img{
+	width:100%;
+}
+.container-fluid_m #swiper3 .swiper-slide .center-block {
+    width: 60%;
+}

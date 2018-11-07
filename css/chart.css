@@ -1,0 +1,168 @@
+.merchant-portayal-view ._data_a ._trade {
+    position: relative;
+    width: calc(50% - 20px);
+    height: 100%;
+    float: right;
+    background: #f1721e;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015), 1px 2px 5px #656363;
+}
+
+.merchant-portayal-view ._data_a ._consumer {
+    position: relative;
+    width: calc(50% - 20px);
+    height: 100%;
+    float: left;
+    background: #3490ec;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.015), 1px 2px 5px #656363;
+}
+
+.merchant-portayal-view ._data_a ._t {
+    position: relative;
+    padding-left: 16px;
+    margin-top: 4px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+.merchant-portayal-view ._data_a ._number {
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+    height: 36px;
+    line-height: 36px;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.merchant-portayal-view ._data_a ._comparison {
+    position: relative;
+    margin-left: 18px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color: white;
+}
+
+.merchant-portayal-view ._data_a ._comparison_line {
+    position: relative;
+    margin-left: 16px;
+    margin-top: 2px;
+    width: calc(100% - 32px);
+    height: 6px;
+}
+
+.merchant-portayal-view ._data_a ._area {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.merchant-portayal-view ._data_a ._comparison ._c_a {
+    position: relative;
+    width: 34px;
+    height: 100%;
+    float: left;
+}
+
+.merchant-portayal-view ._data_a ._comparison ._c_b {
+    position: relative;
+    width: 38px;
+    height: 100%;
+    float: left;
+}
+
+.merchant-portayal-view ._data_a ._comparison ._c_c {
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+    height: 100%;
+    float: left;
+    font-weight: bolder;
+}
+
+.merchant-portayal-view ._data_a ._area ._f-b {
+    width: 25%;
+}
+
+
+.merchant-portayal-view ._data_a ._area .w-item {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    float: left;
+}
+
+
+.merchant-portayal-view ._data_a ._area .w-line {
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    top: 50%;
+    margin-top: -19px;
+    border-left: 2px dashed white;
+    height: 38px;
+}
+
+
+
+.merchant-portayal-view ._data_a ._area .w-item .w-num {
+    position: relative;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    font-weight: bolder;
+    height: 22px;
+    line-height: 22px;
+}
+
+.merchant-portayal-view ._data_a ._area .w-item .w-label {
+    position: relative;
+    height: 22px;
+    line-height: 22px;
+    color: white;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+
+.merchant-portayal-view ._data_a ._area ._f-a {
+    width: 50%;
+}
+
+.merchant-portayal-view ._data_a ._area ._f-b {
+    width: 25%;
+}
+
+
+.merchant-portayal-view ._data_a ._comparison_line_a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #a8a8a8;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
+
+.merchant-portayal-view ._data_a ._comparison_line_b {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #d6d5d8;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
