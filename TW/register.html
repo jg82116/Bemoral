@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="zh-tc" style="background: #fff;">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="utf-8">
+  <title>BeMoral</title>
+  <script type="text/javascript">
+  if (screen.width<=768)
+      document.write('<script type="text/javascript" src="js/viewport.js"><\/script>');
+  </script>
+<!--   <link rel="stylesheet" href="../css/video-js.css"> -->
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/swiper-4.2.2.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style2.css">
+  <link rel="stylesheet" href="../css/style_xs.css">
+    
+  <script src="js/jquery-1.11.min.js" type="text/javascript"></script>
+  <script src="js/md5.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/jquery.form.js" ></script>
+  <script type="text/javascript" src="js/swiper.js"></script>
+<!--   <script type="text/javascript" src="js/video.min.js"></script> -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.transit.min.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="js/messages_zh_TW.js"></script>
+  <script type="text/javascript" src="js/messages_zh.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/commonnew.js"></script>
+  <script type="text/javascript" src="js/data2.js"></script>
+    
+  <script type="text/javascript" src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/facebook.js"></script> 
+<!--  移動端 -->
+  <script type="text/javascript" src="js/common_m.js"></script>
+  
+
+  
+</head>
+<body style="background: #fff;">
+  <!-- <div class="test_box" style="width: 300px;height: 300px;position: fixed;z-index: 100;background: green;left: 0;top: 0"></div> -->
+  <div class="container-fluid" id="big_big" style="padding: 0;">
+    <header>
+      <nav class="product black_nav">
+        <div class="nav_box hidden-xs hidden-sm">
+          <img class="logo" src="images/logo1.png" />
+<!--           <div class="left_button"><a class="search_button animated">SEARCH</a><a class="contact_us animated fix_none">聯繫我們</a></div> -->
+		  <div class="left_button">
+          	<a class="search_button animated">SEARCH</a>
+          	<div class="bottom_line_div contact_us animated"><a class="contact_us animated fix_none bottom_line_white" href="contact_us.html">聯繫我們</a></div>
+          </div>
+          <input class="search_input" type="text" name="search" placeholder="SEARCH YOU WANT" style="display: none;" />
+          <div class="right_button">
+            <a class="lang_change fix_none">TW</a>
+            <ul class="lang_choose fix_none" style="display: none;">
+              <li data="tw">TW</li>
+              <li data="en">EN</li>
+              <li data="cn">CN</li>
+            </ul>
+            <!-- <a class="account_button">登錄</a> -->
+<!--             <div class="submit_text">Hi,<span class="user_name">ANNA</span><img src="images/person_icon.png" /></div> -->
+            <div class="submit_text" id="logined">
+            	<div class="animated fadeIn" id="loginp1" style="width:100%">Hi,<span class="user_name"></span><img src="images/person_icon.png" /></div>
+            	<div class="animated fadeIn" id="loginp2" style="width:100%"><a class="bottom_line_black" href='#' style="padding-right:10px;">賬戶</a><a class="bottom_line_black" href="javascript:;" onclick="logout()">退出</a></div>
+            </div>
+            <div class="submit_text bottom_line_div" id="notlogined"><a class="bottom_line_black" href='Login.html'>登錄</a></div>         
+            <div class="bottom_line_div"><a class="chart_button bottom_line_white" >購物車</a></div>
+            <a class="chart_num" id="commonCartNum" href="cart.html">0</a>
+          </div>
+          <div class="first_menu fix_none">
+            <ul id="first_menu">
+              <li><a>SHOP</a></li>
+              <li><a>ABOUT</a></li>
+              <li><a href="">動態</a></li>
+              <li><a>Q&amp;A</a></li>
+              <li><a>禮品</a></li>
+              <div id="nav_slider"></div>
+            </ul>
+          </div>
+          <div class="second_menu" style="display: none;">
+            <ul class="second_menu_ul">
+              <!-- <li><a>hand made soap</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li>
+              <li><a>facial mask</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li>
+              <li><a>hair care</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li>
+              <li><a>skin care</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li>
+              <li><a>BeMoral kits</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li> -->
+              <div id="nav_slider1"></div>
+            </ul>
+          </div>
+        </div>
+        <div class="nav_box1 hidden-md hidden-lg">
+          <img class="logo_m logo_m1" src="images_m/logo.png" />
+          <div class="cart_box cart_box1">
+            <span>5</span>
+          </div>
+          <div class="nav_button_m1">
+          </div>
+          <div class="nav_button">
+            <span class="nav_left"></span>
+          </div>
+          <div class="nav_button">
+            <span class="nav_right"></span>
+          </div>
+          <div class="nav_list" style="display: none;">
+            <img class="logo_m" src="images_m/logo.png" />
+            <div class="cart_box">
+              <span>5</span>
+            </div>
+            <ul id="first_menu_m" class="menu_m animated" style="opacity:0;">
+              <li class="menu_m_list"><a>SHOP</a>
+              <ul class="menum_list1"></ul>
+              </li>
+              <li><a>ABOUT</a></li>
+              <li><a href="new_list.html?language=tc&preview=2">動態</a></li>
+              <li><a href="QA.html?language=tc&preview=2">Q&amp;A</a></li>
+              <li><a>禮品</a></li>
+              <li><a href="Login.html">登錄</a><a id="getInfo"></a><a id="goOut">登出</a></li>
+              <li class="change_lang"><a>en</a><a>cn</a><a>tw</a></li>
+              <li class="search_input1">
+                <div class="search_icon"></div>
+                <input type="text" name="" placeholder="SEARCH YOU WANT">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main" style="margin:0 auto;margin-top: 250px;width: 93.75%;">
+    
+     <div class="row bottom_space">
+		<div class="col-md-12">
+			<div class="">
+				<h1 class="text-center">
+					<strong>創建賬號</strong>
+				</h1>
+			</div>
+		</div>
+	</div>
+    
+    <div class="row" >
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<strong class="text_padding">第三方登錄:</strong><br>
+			<div class="col-md-3">
+                 	<span class="link_button" role="button" id="fblogin">             	 	
+                	 	<span class="icon_facebook_white">CONNECT</span>
+        			</span>
+        	</div>
+        	<div class="col-md-3">
+                    <span class="link_button" role="button" >
+						<span class="icon_twitter_white">CONNECT</span>					
+        			</span>
+
+        	</div>
+        	<div class="col-md-3 hidden-xs hidden-sm" id="wechat">
+                 	<span class="link_button" role="button" id="wechatlogin" href="#modal-container-627303" data-toggle="modal">
+						<span class="icon_wechat_white">CONNECT</span>
+        			</span>
+        			
+
+        	</div>
+        	<div class="col-md-3 hidden-xs hidden-sm">
+                	<span class="link_button" role="button" id="alipaylogin">
+						<span class="icon_alipay_white">CONNECT</span>
+        			</span>
+        	</div>
+			
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+	
+
+    <div class = "row ">
+    	<div class="col-md-8 col-md-offset-2">
+    	<div class="line ">
+			<span class="span_middle">OR</span>
+		</div>
+		</div>
+    </div>
+	<div class="row bottom_space">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+		<form id="regform" name="regform" role="form" method="post">
+			<div class="col-md-12">
+			 <div class="form-group col-md-12">
+				<label class="must" for="gender">性別</label>
+					<input type="radio" name="gender" id="gender" value="female" > MS
+					<input type="radio" name="gender" id="gender"  value="male"> MR
+			    <label id="gender-error" class="error" for="gender"></label>
+			 </div>
+			</div>	
+				
+			<div class="col-md-12">
+			<div class="form-group col-md-6">					 
+				<label class="must"  for="username">
+					用護名 
+				</label>
+				<input class="form-control" id="username" name="username" type="text" placeholder="用戶名不能為純數字" >
+				<label id="username-error" class="error" for="username"></label>
+			</div>
+			<div class="form-group col-md-6">					 
+				<label class="must" for="birthdate">
+					生日
+				</label>
+				<div class="form-group" >
+					<input class="form-control" id="birthdate"  name="birthdate" placeholder="月-日-年" type="date">
+					<label id="birthdate-error" class="error" for="birthdate"></label>
+<!-- 					<input class="form-control" style="width:33.33%;position:relative;float:left" id="month" placeholder="月"> -->
+<!-- 					<input class="form-control" style="width:33.33%;position:relative;float:left" id="day"  placeholder="日"> -->
+<!-- 					<input class="form-control" style="width:33.33%;position:relative;float:left" id="year"  placeholder="年"> -->
+				</div>				
+			</div>
+			</div>
+			
+			<div class="col-md-12">	
+			<div class="form-group col-md-6">					 
+				<label class="must" for="password">
+					密碼
+				</label>
+				<input class="form-control" id="password" name="password" type="password" placeholder="由6-20的數字字母組成	" >
+				<label id="password-error" class="error" for="password"></label>
+			</div>
+			<div class="form-group col-md-6">					 
+				<label class="must" for="password2">
+					密碼確認
+				</label>
+				<input class="form-control" id="password2" name="confirm_password" type="password">
+				<label id="password2-error" class="error" for="password2"></label>
+			</div>
+			</div>
+			
+			<div class="col-md-12">
+			<div class="form-group col-md-6">					 
+				<label class="must"  for="phone_num">
+					手機
+				</label>
+				
+			  <div>			  		
+			  	<select name="countryCode" id="auth-country-picker" class="form_country_code">
+			  		<option data-calling-code="86" data-country-code="CN" value="CN" data-a-html-content="中国大陆 +86" >CN +86</option>
+			  		<option data-calling-code="886" data-country-code="TW" value="TW" data-a-html-content="台湾 +886" selected="">TW +886</option>
+			  	</select>
+			  		
+				<input class="form-control phone_num_reg" style="width:60%; padding-right: 0px; display:inline; " id="phone_num" name="phone_num" phone_num_validate="N">
+				<button class="form_button2" type="button" disabled="disabled" style="width: 40%;" for="phone_num" id ="getphonecode">获取验证码
+					<img class = "form_button_img hidden-xs hidden-sm" src="./images/button_small1_border.png">
+				</button>
+			  </div>
+				<label id="phone_num-error" class="error" for="phone_num"></label>
+			</div>
+					
+			<div class="form-group col-md-6">					 
+				<label class="must"  for="phone_code">
+					輸入驗證碼
+				</label>
+				<input class="form-control" id="phone_code" name="phone_code" >
+				<label id="phone_code-error" class="error" for="phone_code"></label>
+			</div>
+			</div>
+			
+			<div class="col-md-12">			
+			<div class="form-group col-md-6">					 
+				<label class="must" for="email">
+					郵箱
+				</label>
+				<input class="form-control" id="email" name="email" type="email">
+				<label id="email-error" class="error" for="email"></label>
+			</div>				
+			</div>
+			
+			<div class="checkbox col-md-12">
+				<div class="col-md-12">
+				<label><input type="checkbox" id="confirm_status1" name="confirm_status1">本人確認本人已18歲及以上，並已閱讀並同意遵守道德準則。</label>
+				</div>
+				<div class="col-md-12"><label id="confirm_status1-error" class="error" for="confirm_status1"></label></div>
+			</div>
+			<div class="checkbox  col-md-12">
+			  <div class="col-md-12">
+				<label><input type="checkbox" id="confirm_status2" name="confirm_status2" value="">我希望收到來自BeMoral的電子郵件，獲取最新資訊和活動。</label>
+			  </div>
+			</div>
+			<div class="col-md-12"><label id="errormessage2" class="error_system"></label></div>
+			<div class="col-md-12 hidden-xs hidden-sm">
+				<button class="sub_button2" id = "createaccount" type="submit" >創建賬號</button>
+			</div>
+			<div class='row hidden-md hidden-lg m_center'><button class="sub_button_m" id = "createaccount" type="submit">創建賬號</button></div>
+		</form>	
+		</div>	
+		<div class="col-md-2"></div>   
+    </div>
+    </div>
+
+    <div class="modal fade" id="modal-container-627303" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+					<h4 class="modal-title" id="myModalLabel">手機掃碼安全登錄</h4>
+				</div>
+		  		<div id="wechantQRcon">
+		  		</div>
+			</div>					
+		</div>				
+	</div>
+
+    <footer class="footer hidden-xs hidden-sm">
+      <ul class="footer_list clearfix">
+        <li>
+          <span class="animated">ABOUT BeMoral</span>
+          <ul>
+            <li><a class="animated" href="#">關於我們</a></li>
+            <li><a class="animated" href="#">藝術家合作</a></li>
+            <li><a class="animated" href="#">最新產品</a></li>
+            <li><a class="animated" href="#">線上條款</a></li>
+            <li><a class="animated" href="#">工作機會</a></li>
+            <li><a class="animated" href="new_list.html?language=tc&preview=2">新聞資訊</a></li>
+          </ul>
+        </li>
+        <li style="margin-left: 130px;margin-right: 150px;">
+          <span class="animated">MY  BeMoral</span>
+          <ul>
+              <li><a class="animated" id="myAccount">我的賬號</a></li>
+              <li><a class="animated" id="myCollect">我的收藏</a></li>
+              <li><a class="animated" id="myHistory">歷史訂單</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="animated">HELP&amp;FAQ</span>
+          <ul>
+            <li><a class="animated" href="contact_us.html">聯繫我們</a></li>
+            <li><a class="animated" href="#">客戶服務</a></li>
+            <li><a class="animated" href="#">派送信息</a></li>
+          </ul>
+        </li>
+
+        <div class="search_box animated">
+          <input class="search_kuang" type="text" name="search" placeholder="FIND PRODUCT"/>
+          <div class="search_button1"></div>
+        </div>
+        
+      </ul>
+
+      <div class="copy_right hidden-xs hidden-sm animated">隱私政策 | 服務條款<span>©2018BeMoral. ALL RIGHTS RESERVED</span></div>
+    </footer>
+    <footer class="footer hidden-lg hidden-md" style="z-index: 2;position: relative;margin-top: 1px;">
+      <div class="nav_list1" style="display: none;">
+        <ul id="bottom_menu_m" class="menu_m animated" style="opacity: 0;">
+          <li>
+          	<a>about BeMoral</a>
+	          <ul>
+	            <li><a href="#">關於我們</a></li>
+	            <li><a href="#">藝術家合作</a></li>
+	            <li><a href="#">最新產品</a></li>
+	            <li><a href="#">線上條款</a></li>
+	            <li><a href="#">工作機會</a></li>
+	            <li><a href="new_list.html?language=tc&preview=2">新聞資訊</a></li>
+	          </ul>
+			</li>
+          <li>
+          	<a>MY BeMoral</a>
+          	  <ul>
+                  <li><a id="myAccount">我的賬號</a></li>
+                  <li><a id="myCollect">我的收藏</a></li>
+                  <li><a id="myHistory">歷史訂單</a></li>
+	          </ul>
+          </li>
+          <li>
+          	<a>help &amp; faq</a>
+	          <ul>
+	            <li><a href="contact_us.html">聯繫我們</a></li>
+	            <li><a href="#">客戶服務</a></li>
+	            <li><a href="#">派送信息</a></li>
+	          </ul>
+			</li>
+        </ul>
+      </div>
+      <div class="bottom_one">
+        <input type="text" name="" class="send_message" placeholder="輸入你的郵箱可了解更多" />
+        <div class="send_btn"></div>
+        <div class="nav_button1">
+          <span class="nav_left1"></span>
+        </div>
+        <div class="nav_button1">
+          <span class="nav_right1"></span>
+        </div>
+      </div>
+      <img class="icons_m" src="images_m/icons.png" />
+      <div class="copy_right_m">©2018BeMoral. ALL RIGHTS RESERVED</div>
+    </footer>
+  </div>
+</body>
+</html>

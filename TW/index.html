@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="utf-8">
+  
+  <title>BeMoral</title>
+  <script type="text/javascript">
+  if (screen.width<=768)
+      document.write('<script type="text/javascript" src="js/viewport.js"><\/script>');
+  </script>
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/swiper-4.2.2.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="js/jquery-1.11.min.js" type="text/javascript"></script>
+  
+  <script type="text/javascript" src="js/swiper.js"></script>
+
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.transit.min.js"></script>
+<!--   <script type="text/javascript" src="js/easing.js"></script>
+  <script type="text/javascript" src="js/round.js"></script> -->
+  <script src="js/data.js" type="text/javascript"></script>
+  <script src="js/index.js" type="text/javascript"></script>
+  <script src="js/commonnew.js" type="text/javascript"></script>
+<!-- 移动端   -->
+  <script src="js/common_m.js" type="text/javascript"></script>
+    
+</head>
+<body>
+  <!-- <div class="test_box" style="width: 300px;height: 300px;position: fixed;z-index: 100;background: green;left: 0;top: 0"></div> -->
+  <div class="container-fluid index" id="big_big" style="padding: 0;">
+    <header>
+      <nav>
+        <div class="nav_box hidden-xs hidden-sm">
+          <img class="logo" src="images/logo.png" />
+<!--           fix 1-1 -->
+          <div>
+          <div class="left_button">
+          	<a class="search_button animated bottom_line_black">SEARCH</a>
+          	<div class="bottom_line_div contact_us animated"><a class="contact_us animated fix_none bottom_line_black" href="contact_us.html">聯繫我們</a></div>
+          </div>
+          <input class="search_input" type="text" name="search" placeholder="SEARCH YOU WANT" style="display: none;" />
+          <div class="right_button">
+            <a class="lang_change fix_none">TW</a>
+            <ul class="lang_choose fix_none" style="display: none;">
+              <li data="tw">TW</li>
+              <li data="en">EN</li>
+              <li data="cn">CN</li>
+            </ul>
+            <!-- <a class="account_button">登錄</a> -->
+            <div class="submit_text" id="logined">
+            	<div class="animated fadeIn" id="loginp1" style="width:100%">Hi,<span class="user_name"></span><img src="images/person_icon.png" /></div>
+            	<div class="animated fadeIn" id="loginp2" style="width:100%"><a class="bottom_line_black" href='profile.html' style="padding-right:10px;">賬戶</a><a class="bottom_line_black" href="javascript:;" onclick="logout()">退出</a></div>
+            </div>
+            <div class="submit_text bottom_line_div" id="notlogined"><a class="bottom_line_black" href='Login.html'>登錄</a></div>
+            <div class="bottom_line_div"><a class="chart_button bottom_line_black" href="cart.html" >購物車</a></div>
+            <a class="chart_num" id="commonCartNum" href="cart.html">0</a>
+          </div>
+          </div>
+          <div class="first_menu fix_none">
+            <ul id="first_menu">
+              <li><a>SHOP</a></li>
+              <li><a>ABOUT</a></li>
+              <li><a href="">動態</a></li>
+              <li><a href="">Q&amp;A</a></li>
+              <li><a>禮品</a></li>
+              <div id="nav_slider"></div>
+            </ul>
+          </div>
+          <div class="second_menu" style="display: none;">
+            <ul class="second_menu_ul">
+              <!-- <li><a>hand made soap</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li>
+              <li><a>facial mask</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li>
+              <li><a>hair care</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li>
+              <li><a>skin care</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li>
+              <li><a>BeMoral kits</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li> -->
+              <div id="nav_slider1"></div>
+            </ul>
+          </div>
+        </div>
+        <div class="nav_box1 hidden-md hidden-lg">
+          <img class="logo_m logo_m1" src="images_m/logo.png" />
+          <div class="cart_box cart_box1">
+            <span>5</span>
+          </div>
+          <div class="nav_button_m1">
+          </div>
+          <div class="nav_button">
+            <span class="nav_left"></span>
+          </div>
+          <div class="nav_button">
+            <span class="nav_right"></span>
+          </div>
+          <div class="nav_list" style="display: none;">
+            <img class="logo_m" src="images_m/logo.png" />
+            <div class="cart_box">
+              <span>0</span>
+            </div>
+            <ul id="first_menu_m" class="menu_m animated" style="opacity:0;">
+              <li class="menu_m_list"><a>SHOP</a>
+              <ul class="menum_list1"></ul>
+              </li>
+              <li><a>ABOUT</a></li>
+              <li><a href="new_list.html?language=tc&preview=2">動態</a></li>
+              <li><a href="QA.html?language=tc&preview=2">Q&amp;A</a></li>
+              <li><a>禮品</a></li>
+              <li><a href="Login.html">登錄</a><a id="getInfo"></a><a id="goOut">登出</a></li>
+              <li class="change_lang"><a href="../EN/index.html">en</a><a href="../CN/index.html">cn</a><a href="../TW/index.html">tw</a></li>
+              <li class="search_input1">
+                <div class="search_icon"></div>
+                <input type="text" name="" placeholder="SEARCH YOU WANT">
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+     
+      
+      
+      <div class="swiper-container"  id="swiper1">
+        <div class="swiper-pagination swiper-pagination1 hidden-xs hidden-sm"></div>
+        <div class="swiper-wrapper">
+        <!-- 
+          <div class="swiper-slide">
+            <img class="center-block img-responsive" id="swiper_img1" src="./images/index_bg1.jpg" />
+            <span class="big_slogen animated_5">INVISIMATTE</span>
+            <span class="sma_slogen animated_5">INSTANT REFRESH.<br/> ON - THE - GO FILTER EFFECT.</span>
+            <a class="shop_now animated_5 hidden-md hidden-lg"><span class="animated">shop now</span></a>
+          </div>
+          <div class="swiper-slide">
+            <img class="center-block img-responsive" src="./images/index_bg2.jpg" />
+            <span class="big_slogen animated_5">SOAP MUSE</span>
+            <span class="sma_slogen animated_5">THE ULTIMATE BEAUTY IS NOW IN YOUR HANDS<br/>100% HAND MADE IN JAPAN</span>
+            <a class="shop_now animated_5 hidden-md hidden-lg"><span class="animated">shop now</span></a>
+          </div>
+          <div class="swiper-slide">
+            <img class="center-block img-responsive" src="./images/index_bg3.jpg" />
+            <span class="big_slogen animated_5">WHISPER</span>
+            <span class="sma_slogen animated_5">HAIR SENSATION REDEFINED<br/>A PRETTY LITTLE CHRISTMASY IDULGENCE</span>
+            <a class="shop_now animated_5 hidden-md hidden-lg"><span class="animated">shop now</span></a>
+          </div>
+          <div class="swiper-slide">
+            <img class="center-block img-responsive" src="./images/index_bg4.jpg" />
+            <span class="big_slogen animated_5" id="more_txt" style="line-height: 100%;margin-top: -40px">TO CREATE<br/>THE AEROBIC<br/>EXERCISE<br/>OF THE SKIN</span>
+            <span class="sma_slogen animated_5" id="more_txt1" style="margin-top: 270px">FEATHER SILK HYDRATING MASK<br/>GLITTERING RECOVER MASK<br>HYPEROXIA FIRMING MASK</span>
+            <a class="shop_now animated_5 hidden-md hidden-lg"><span class="animated">shop now</span></a>
+          </div> -->
+        </div>
+      </div>
+    </header>
+    <div class="main">
+     <div class="tab_product_box_background hidden-xs hidden-sm">
+      <div class="tab_product_box hidden-xs hidden-sm">
+        <div class="swiper-container"  id="swiper2" >
+          <div class="swiper-wrapper">
+            <!-- <div class="swiper-slide">
+              <div class="tab_unit">hand made soap</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tab_unit">facial mask</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tab_unit">skin care</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tab_unit">facial mask</div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tab_unit">skin care</div>
+            </div> -->
+           </div>
+        </div>
+
+      </div>
+      
+      </div>
+      
+      <div class="product_box">
+        <div class="hidden-xs hidden-sm left_jt">
+          <div class="top_box">
+            <div class="top_box_inside"></div>
+          </div>
+          <div class="bottom_box">
+            <div class="bottom_box_inside"></div>
+          </div>
+        </div>
+        <div class="hidden-xs hidden-sm right_jt">
+          <div class="top_box">
+            <div class="top_box_inside"></div>
+          </div>
+          <div class="bottom_box">
+            <div class="bottom_box_inside"></div>
+          </div>
+        </div>
+        <div class="swiper-container"  id="swiper3">
+          <div class="product_m_title hidden-md hidden-lg"><span>讀取中...</span></div>
+          <div class="swiper-wrapper" id="clone_1">
+          
+           </div>
+          <div class="product_buttons hidden-md hidden-lg"></div>
+        </div>
+      </div>
+
+      <div class="show_box1 container-fluid" style="position: relative;overflow: hidden;">
+        <div class="container-fluid">
+          <div class="swiper-container hidden-xs hidden-sm" id="swiper4">
+            <div class="swiper-wrapper" >
+            
+              <div class="swiper-slide">
+                <div class="new_pop2_box"><img class="center-block img-responsive" src="./images/show_img1.jpg" /></div>
+                <div class="show_pop1 animated">
+                  <div class="show_pop1_left">
+                    <img class="img-responsive" src="images/right_kuai.png" />
+                  </div>
+                  <div class="show_pop1_right">
+                   <div class ="show_pop_middle" style="text-align:right">
+                    <span class="show_box_title animated">PROBIOTIC CLEANSING BARS</span>
+                    <span class="show_box_des animated">New to our skin care offering: hand-crafted, probiotic & Manuka Honey cleansing bars.</span>
+                    <div class="rotate_out animated">
+                      <a class="rotate_box rotate_box_right">
+                        <div class="left_cir"><div class="left_cir_in"></div></div>
+                        <div class="right_cir"><div class="right_cir_in"></div></div>
+                        <img class="rotate_cir" src="images/rotate_cir.png" />
+                      </a>
+                    </div>
+<!--                     <div class="move_more animated"><img src="images/t_b_move.png" /><span>SCROLL UP&DOWN TO SEE MORE COLLECTION.</span></div> -->
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="z-index: 2;">
+                <div class="new_pop2_box"><img class="center-block img-responsive" src="./images/show_img2.jpg" /></div>
+                <div class="show_pop1 animated">
+                  <div class="show_pop1_left">
+                    <img class="img-responsive" src="images/right_kuai.png" />
+                  </div>
+                  <div class="show_pop1_right">
+                  	<div class ="show_pop_middle" style="text-align:right">
+                    <span class="show_box_title animated">PROBIOTIC CLEANSING BARS</span>
+                    <span class="show_box_des animated">New to our skin care offering: hand-crafted, probiotic & Manuka Honey cleansing bars.</span>
+                    <div class="rotate_out animated">
+                      <a class="rotate_box rotate_box_right">
+                        <div class="left_cir"><div class="left_cir_in"></div></div>
+                        <div class="right_cir"><div class="right_cir_in"></div></div>
+                        <img class="rotate_cir" src="images/rotate_cir.png" />
+                      </a>
+                    </div>
+<!--                     <div class="move_more animated"><img src="images/t_b_move.png" /><span>SCROLL UP&DOWN TO SEE MORE COLLECTION.</span></div> -->
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new_pop2_box"><img class="center-block img-responsive" src="./images/show_img3.jpg" /></div>
+                <div class="show_pop1 animated">
+                  <div class="show_pop1_left">
+                    <img class="img-responsive" src="images/left_kuai.png" />
+                  </div>
+                  <div class="show_pop1_right">
+                    <div class ="show_pop_middle">
+                    <span class="show_box_title animated">PROBIOTIC CLEANSING BARS</span>
+                    <span class="show_box_des animated">New to our skin care offering: hand-crafted, probiotic & Manuka Honey cleansing bars.</span>
+                    <div class="rotate_out animated">
+                      <a class="rotate_box">
+                        <div class="left_cir"><div class="left_cir_in"></div></div>
+                        <div class="right_cir"><div class="right_cir_in"></div></div>
+                        <img class="rotate_cir" src="images/rotate_cir.png" />
+                      </a>
+                    </div>
+<!--                     <div class="move_more animated"><img src="images/t_b_move.png" /><span>SCROLL UP&DOWN TO SEE MORE COLLECTION.</span></div> -->
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new_pop2_box"><img class="center-block img-responsive" src="./images/show_img4.jpg" /></div>
+                <div class="show_pop1 animated">
+                  <div class="show_pop1_left">
+                    <img class="img-responsive" src="images/left_kuai.png" />
+                  </div>
+                  <div class="show_pop1_right">
+                   <div class ="show_pop_middle"> 
+                    <span class="show_box_title animated">PROBIOTIC CLEANSING BARS</span>
+                    <span class="show_box_des animated">New to our skin care offering: hand-crafted, probiotic & Manuka Honey cleansing bars.</span>
+                    <div class="rotate_out animated">
+                      <a class="rotate_box">
+                        <div class="left_cir"><div class="left_cir_in"></div></div>
+                        <div class="right_cir"><div class="right_cir_in"></div></div>
+                        <img class="rotate_cir" src="images/rotate_cir.png" />
+                      </a>
+                    </div>
+<!--                     <div class="move_more animated"><img src="images/t_b_move.png" /><span>SCROLL UP&DOWN TO SEE MORE COLLECTION.</span></div> -->
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new_pop2_box"><img class="center-block img-responsive" src="./images/show_img5.jpg" /></div>
+                <div class="show_pop1 animated">
+                  <div class="show_pop1_left">
+                    <img class="img-responsive" src="images/right_kuai.png" />
+                  </div>
+                  <div class="show_pop1_right">
+                   <div class ="show_pop_middle" style="text-align:right">
+                    <span class="show_box_title animated">PROBIOTIC CLEANSING BARS</span>
+                    <span class="show_box_des animated">New to our skin care offering: hand-crafted, probiotic & Manuka Honey cleansing bars.</span>
+                    <div class="rotate_out animated">
+                      <a class="rotate_box rotate_box_right">
+                        <div class="left_cir"><div class="left_cir_in"></div></div>
+                        <div class="right_cir"><div class="right_cir_in"></div></div>
+                        <img class="rotate_cir" src="images/rotate_cir.png" />
+                      </a>
+                    </div>
+<!--                     <div class="move_more animated"><img src="images/t_b_move.png" /><span>SCROLL UP&DOWN TO SEE MORE COLLECTION.</span></div> -->
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new_pop2_box"><img class="center-block img-responsive" src="./images/show_img6.jpg" /></div>
+                <div class="show_pop1 animated">
+                  <div class="show_pop1_left">
+                    <img class="img-responsive" src="images/right_kuai.png" />
+                  </div>
+                  <div class="show_pop1_right">
+                   <div class ="show_pop_middle" style="text-align:right">
+                    <span class="show_box_title animated">PROBIOTIC CLEANSING BARS</span>
+                    <span class="show_box_des animated">New to our skin care offering: hand-crafted, probiotic & Manuka Honey cleansing bars.</span>
+                    <div class="rotate_out animated">
+                      <a class="rotate_box rotate_box_right">
+                        <div class="left_cir"><div class="left_cir_in"></div></div>
+                        <div class="right_cir"><div class="right_cir_in"></div></div>
+                        <img class="rotate_cir" src="images/rotate_cir.png" />
+                      </a>
+                    </div>
+<!--                     <div class="move_more animated"><img src="images/t_b_move.png" /><span>SCROLL UP&DOWN TO SEE MORE COLLECTION.</span></div> -->
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new_pop2_box"><img class="center-block img-responsive" src="./images/show_img7.jpg" /></div>
+                <div class="show_pop1 animated">
+                  <div class="show_pop1_left">
+                    <img class="img-responsive" src="images/left_kuai.png" />
+                  </div>
+                  <div class="show_pop1_right">
+                   <div class ="show_pop_middle">
+                    <span class="show_box_title animated">PROBIOTIC CLEANSING BARS</span>
+                    <span class="show_box_des animated">New to our skin care offering: hand-crafted, probiotic & Manuka Honey cleansing bars.</span>
+                    <div class="rotate_out animated">
+                      <a class="rotate_box">
+                        <div class="left_cir"><div class="left_cir_in"></div></div>
+                        <div class="right_cir"><div class="right_cir_in"></div></div>
+                        <img class="rotate_cir" src="images/rotate_cir.png" />
+                      </a>
+                    </div>
+<!--                     <div class="move_more animated"><img src="images/t_b_move.png" /><span>SCROLL UP&DOWN TO SEE MORE COLLECTION.</span></div> -->
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new_pop2_box"><img class="center-block img-responsive" src="./images/show_img8.jpg" /></div>
+                <div class="show_pop1 animated">
+                  <div class="show_pop1_left">
+                    <img class="img-responsive" src="images/left_kuai.png" />
+                  </div>
+                  <div class="show_pop1_right">
+                   <div class ="show_pop_middle">
+                    <span class="show_box_title animated">PROBIOTIC CLEANSING BARS</span>
+                    <span class="show_box_des animated">New to our skin care offering: hand-crafted, probiotic & Manuka Honey cleansing bars.</span>
+                    <div class="rotate_out animated">
+                      <a class="rotate_box">
+                        <div class="left_cir"><div class="left_cir_in"></div></div>
+                        <div class="right_cir"><div class="right_cir_in"></div></div>
+                        <img class="rotate_cir" src="images/rotate_cir.png" />
+                      </a>
+                    </div>
+<!--                     <div class="move_more animated"><img src="images/t_b_move.png" /><span>SCROLL UP&DOWN TO SEE MORE COLLECTION.</span></div> -->
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="show_box2 container-fluid" style="position: relative;overflow: hidden;">
+        <div class="hidden-xs hidden-sm left_jt1 animated">
+          <div class="top_box">
+            <div class="top_box_inside"></div>
+          </div>
+          <div class="bottom_box">
+            <div class="bottom_box_inside"></div>
+          </div>
+        </div>
+        <div class="hidden-xs hidden-sm right_jt1 animated">
+          <div class="top_box">
+            <div class="top_box_inside"></div>
+          </div>
+          <div class="bottom_box">
+            <div class="bottom_box_inside"></div>
+          </div>
+        </div>
+        <div class="container-fluid1125">
+		<div class="swiper-container hidden-md hidden-lg" id="swiper4_m">
+            <div class="swiper-wrapper" id="clone_2">
+              
+            </div>
+          </div>
+          <div class="swiper-container" id="swiper5">
+            <div class="swiper-wrapper" id="clone_3">
+            </div>
+          </div>
+        </div>
+        <div class="left_zhezhao zhezhao"></div>
+        <div class="right_zhezhao zhezhao"></div>
+      </div>
+
+      <div class="last_part container-fluid hidden-xs hidden-sm" style="padding: 0;position: relative;min-width: 1700px;">
+        
+        <div class="last_bg ">
+          <img class="center-block img-responsive" style="opacity: 0" src="images/last_bg.png" />
+          <img class="last_bg1 center-block img-responsive animated" style="opacity: 0" src="images/last_bg1.png" />
+          <img class="last_bg2 center-block img-responsive animated" style="opacity: 0" src="images/last_bg2.png" />
+        </div>
+        <!-- <img class="last_txt animated" src="images/last_txt.png" /> -->
+        <div class="last_box">
+          <!-- <img class="animated" src="images/last_txt1.png" />
+          <img class="animated" src="images/last_txt2.png" />
+          <img class="animated" src="images/last_txt3.png" /> -->
+          <!-- <img class="animated" src="images/last_txt4.png" />
+          <img class="animated" src="images/last_txt5.png" />
+          <img class="animated" src="images/last_txt6.png" /> -->
+          <div class="last_boxes">
+            <h2 class="last_txt1 animated" style="margin-top: 10px">BELIEVE</h2>
+            <h2 class="last_txt2 animated">IN</h2>
+            <h2 class="last_txt3 animated">MORE</h2>
+          </div>
+          
+          <div class="about_us_text animated">
+縱觀腐敗和萎縮的存在。<br>
+我們自控黑潮貫穿核心，這是不同以往的新常態主導群青色的極地成為快速便捷的路經，體現思想重塑的快感。<br>
+偽裝者的熾熱雙瞳，是最悅目的風景；嫉妒者的尖銳咆哮，是最悅耳的音調倘若你也陷入這傲慢的詭譎氣息，那僅是異於舊質所釋放出來的天性。<br>
+緊密共生，BeMoral。
+          </div>
+<!--           秉持“Believe in More”的品牌理念，不滿足的背後是因為我們相信，每一個獨特的你，都值得更精彩的選擇。無論品牌多少，消費者最重視的還是「體驗」。BeMoral秉持「次世代」的保養哲學，以全球各地為供應鏈，並與不同的藝術家及職人合作，講求更精緻、更創新、更全方位，屬於下個世代的嶄新體驗。 -->
+        </div>
+        <a class="rotate_box1 animated">
+          <div class="left_cir"><div class="left_cir_in"></div></div>
+          <div class="right_cir"><div class="right_cir_in"></div></div>
+          <img class="rotate_cir" src="images/rotate_cir.png" />
+        </a>
+
+        <div class="eye1 animated_1">
+          <img class="eye1_img" src="images/eye1.png" />
+          <img class="eye1_cir" src="images/eye1_cir.png" />
+          <img class="eye1_empty" src="images/eye1_empty.png" />
+        </div>
+        <div class="eye2 animated_1">
+          <img class="eye2_img" src="images/eye2.png" />
+          <img class="eye2_cir" src="images/eye2_cir.png" />
+          <img class="eye2_empty" src="images/eye2_empty.png" />
+        </div>
+      </div>
+      <div class="last_part container-fluid hidden-md hidden-lg" style="padding: 0;position: relative;">
+        <img class="last_img center-block img-responsive animated" id="last_img" style="opacity: 0;width:100%;" src="images_m/last_img.png" />
+        <img class="last_txt_m animated" style="opacity: 0" id="last_word" src="images_m/last_txt.png" />
+      </div>
+    </div>
+
+
+    <footer class="footer hidden-xs hidden-sm">
+      <ul class="footer_list clearfix">
+        <li>
+          <span class="animated">ABOUT BeMoral</span>
+          <ul>
+            <li><a class="animated" href="#">關於我們</a></li>
+            <li><a class="animated" href="#">藝術家合作</a></li>
+            <li><a class="animated" href="#">最新產品</a></li>
+            <li><a class="animated" href="#">線上條款</a></li>
+            <li><a class="animated" href="#">工作機會</a></li>
+            <li><a class="animated" href="new_list.html?language=tc&preview=2">新聞資訊</a></li>
+          </ul>
+        </li>
+        <li style="margin-left: 130px;margin-right: 150px;">
+          <span class="animated">MY  BeMoral</span>
+          <ul>
+              <li><a class="animated" id="myAccount">我的賬號</a></li>
+              <li><a class="animated" id="myCollect">我的收藏</a></li>
+              <li><a class="animated" id="myHistory">歷史訂單</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="animated">HELP&amp;FAQ</span>
+          <ul>
+            <li><a class="animated" href="contact_us.html">聯繫我們</a></li>
+            <li><a class="animated" href="#">客戶服務</a></li>
+            <li><a class="animated" href="#">派送信息</a></li>
+          </ul>
+        </li>
+
+        <div class="search_box animated">
+          <input class="search_kuang" type="text" name="search" placeholder="FIND PRODUCT"/>
+          <div class="search_button1"></div>
+        </div>
+        
+      </ul>
+
+      <div class="copy_right hidden-xs hidden-sm animated">隱私政策 | 服務條款<span>©2018BeMoral. ALL RIGHTS RESERVED</span></div>
+    </footer>
+    <footer class="footer hidden-lg hidden-md" style="z-index: 2;position: relative;margin-top: 1px;">
+      <div class="nav_list1" style="display: none;">
+        <ul id="bottom_menu_m" class="menu_m animated" style="opacity: 0;">
+          <li>
+          	<a>about BeMoral</a>
+	          <ul>
+	            <li><a href="#">關於我們</a></li>
+	            <li><a href="#">藝術家合作</a></li>
+	            <li><a href="#">最新產品</a></li>
+	            <li><a href="#">線上條款</a></li>
+	            <li><a href="#">工作機會</a></li>
+	            <li><a href="new_list.html?language=tc&preview=2">新聞資訊</a></li>
+	          </ul>
+			</li>
+          <li>
+          	<a>MY BeMoral</a>
+          	  <ul>
+                  <li><a id="myAccount">我的賬號</a></li>
+                  <li><a id="myCollect">我的收藏</a></li>
+                  <li><a id="myHistory">歷史訂單</a></li>
+	          </ul>
+          </li>
+          <li>
+          	<a>help &amp; faq</a>
+	          <ul>
+	            <li><a href="contact_us.html">聯繫我們</a></li>
+	            <li><a href="#">客戶服務</a></li>
+	            <li><a href="#">派送信息</a></li>
+	          </ul>
+			</li>
+        </ul>
+      </div>
+      <div class="bottom_one">
+        <input type="text" name="" class="send_message" placeholder="輸入你的郵箱可了解更多" />
+        <div class="send_btn"></div>
+        <div class="nav_button1">
+          <span class="nav_left1"></span>
+        </div>
+        <div class="nav_button1">
+          <span class="nav_right1"></span>
+        </div>
+      </div>
+      <img class="icons_m" src="images_m/icons.png" />
+      <div class="copy_right_m">©2018BeMoral. ALL RIGHTS RESERVED</div>
+    </footer>
+  </div>
+</body>
+</html>

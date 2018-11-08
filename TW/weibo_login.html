@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>微博回调页面</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript"
+
+src="https://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" charset="utf-8" data-callback="true"></script>
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<style>
+	.page{
+        width: 100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+		font-size:1.6em;
+	}
+	
+</style>
+<script>
+$(function(){
+	var code = getQueryString("code");
+	
+						$(".page").css("height",$(window).height());
+	$.ajax({
+		url : "/BeMoralOfficial/weibo/getAccessToken.do",
+		type : "post",
+		dataType : "json",
+		data : {
+			"code" : code,
+		},
+		traditional : true,
+		success : function(result) {
+			var access_token = result.data.access_token;
+			var uid = result.data.uid;
+			$.ajax({
+				url : "/BeMoralOfficial/weibo/getShowUser.do",
+				type : "post",
+				dataType : "json",
+				data : {
+					"access_token" : access_token,
+					"uid":uid
+				},
+				traditional : true,
+				success : function(result) {
+	                console.log(result);
+					if(result.status==0){
+						$(".page-one").css("display","none");
+						$(".page-two").css("display","flex");
+						
+					}else{
+						$(".page-one").css("display","flex");
+						$(".page-two").css("display","none");
+						
+					}
+				},
+				error : function() {
+					alert("网络异常，请重试");
+				}
+			});
+		},
+		error : function() {
+			alert("网络异常，请重试");
+		}
+	});
+
+
+	function getQueryString(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) {
+			return unescape(r[2]);
+		} else {
+			return null;
+		}
+	}
+
+
+})
+
+	</script>
+  </head>
+  
+  <body>
+    <div class="page page-one">
+    	第一次登录成功，正在跳往绑定手机页面......
+    </div>
+    <div class="page page-two">
+    	第二次登录成功，正在跳往首页......
+    </div>
+  </body>
+</html>

@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="zh-tc" style="background: #fff;">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="utf-8">
+  <title>BeMoral</title>
+  <script type="text/javascript">
+  if (screen.width<=768)
+      document.write('<script type="text/javascript" src="js/viewport.js"><\/script>');
+  </script>
+  <link rel="stylesheet" href="../css/video-js.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/swiper-4.2.2.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style2.css">
+
+  
+  <script src="js/jquery-1.11.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/swiper.js"></script>
+  <script type="text/javascript" src="js/video.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.transit.min.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="js/messages_zh_TW.js"></script>
+  <script type="text/javascript" src="js/messages_zh.js"></script>
+  <script type="text/javascript" src="js/jquery.form.js" ></script> 
+    
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/commonnew.js"></script>
+  <script type="text/javascript" src="js/faq.js"></script>
+  <script type="text/javascript" src="js/common_m.js"></script>
+  <script>
+      videojs.options.flash.swf = "video-js.swf";
+  </script>
+  
+</head>
+<body style="background: #fff;">
+  <!-- <div class="test_box" style="width: 300px;height: 300px;position: fixed;z-index: 100;background: green;left: 0;top: 0"></div> -->
+  <div class="container-fluid" id="big_big" style="padding: 0;">
+    <header>
+      <nav class="product black_nav">
+        <div class="nav_box hidden-xs hidden-sm">
+          <img class="logo" src="images/logo1.png" />
+<!--           <div class="left_button"><a class="search_button animated">SEARCH</a><a class="contact_us animated fix_none">聯繫我們</a></div> -->
+		  <div class="left_button">
+          	<a class="search_button animated">SEARCH</a>
+          	<div class="bottom_line_div contact_us animated"><a class="contact_us animated fix_none bottom_line_white" href="contact_us.html">聯繫我們</a></div>
+          </div>
+          <input class="search_input" type="text" name="search" placeholder="SEARCH YOU WANT" style="display: none;" />
+          <div class="right_button">
+            <a class="lang_change fix_none">TW</a>
+            <ul class="lang_choose fix_none" style="display: none;">
+              <li data="tw">TW</li>
+              <li data="en">EN</li>
+              <li data="cn">CN</li>
+            </ul>
+            <!-- <a class="account_button">登錄</a> -->
+<!--             <div class="submit_text">Hi,<span class="user_name">ANNA</span><img src="images/person_icon.png" /></div> -->
+            <div class="submit_text" id="logined">
+            	<div class="animated fadeIn" id="loginp1" style="width:100%">Hi,<span class="user_name"></span><img src="images/person_icon.png" /></div>
+            	<div class="animated fadeIn" id="loginp2" style="width:100%"><a class="bottom_line_black" href='profile.html' style="padding-right:10px;">賬戶</a><a class="bottom_line_black" href="javascript:;" onclick="logout()">退出</a></div>
+            </div>
+            <div class="submit_text bottom_line_div" id="notlogined"><a class="bottom_line_black" href='Login.html'>登錄</a></div>         
+            <div class="bottom_line_div">
+							<a class="chart_button bottom_line_white" href="cart.html">購物車</a>
+						</div>
+            <a class="chart_num" id="commonCartNum" href="cart.html">0</a>
+          </div>
+          <div class="first_menu fix_none">
+            <ul id="first_menu">
+              <li><a>SHOP</a></li>
+              <li><a>ABOUT</a></li>
+              <li><a href="">動態</a></li>
+              <li><a>Q&amp;A</a></li>
+              <li><a>禮品</a></li>
+              <div id="nav_slider"></div>
+            </ul>
+          </div>
+          <div class="second_menu" style="display: none;">
+            <ul class="second_menu_ul">
+              <!-- <li><a>hand made soap</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li>
+              <li><a>facial mask</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li>
+              <li><a>hair care</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li>
+              <li><a>skin care</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li>
+              <li><a>BeMoral kits</a><ul><li><a>collection 1</a></li><li><a>collection 2</a></li><li><a>collection 3</a></li></ul></li> -->
+              <div id="nav_slider1"></div>
+            </ul>
+          </div>
+        </div>
+        <div class="nav_box1 hidden-md hidden-lg">
+          <img class="logo_m logo_m1" src="images_m/logo.png" />
+          <div class="cart_box cart_box1">
+            <span>5</span>
+          </div>
+          <div class="nav_button_m1">
+          </div>
+          <div class="nav_button">
+            <span class="nav_left"></span>
+          </div>
+          <div class="nav_button">
+            <span class="nav_right"></span>
+          </div>
+          <div class="nav_list" style="display: none;">
+            <img class="logo_m" src="images_m/logo.png" />
+            <div class="cart_box">
+              <span>5</span>
+            </div>
+            <ul id="first_menu_m" class="menu_m animated" style="opacity:0;">
+              <li class="menu_m_list"><a>SHOP</a>
+              <ul class="menum_list1"></ul>
+              </li>
+              <li><a>ABOUT</a></li>
+              <li><a href="new_list.html?language=tc&preview=2">動態</a></li>
+              <li><a href="QA.html?language=tc&preview=2">Q&amp;A</a></li>
+              <li><a>禮品</a></li>
+              <li><a href="Login.html">登錄</a><a id="getInfo"></a><a id="goOut">登出</a></li>
+              <li class="change_lang"><a>en</a><a>cn</a><a>tw</a></li>
+              <li class="search_input1">
+                <div class="search_icon"></div> 
+                <input type="text" name="" placeholder="SEARCH YOU WANT">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main" id="" style="margin:0 auto;margin-top: 200px;width: 100%;">
+<!--       <div class="succession_bg">
+        <img class="center-block img-responsive animated_5" src="images/succession_bg.jpg" style="opacity: 0" />
+        <div class="big_title animated_5" style="opacity: 0">WE BELIEVE</div>
+        <div class="sma_title animated_5" style="opacity: 0">INSTANT REFRESH. ON - THE - GO FILTER EFFECT.</div>
+        <div class="sma_title animated_5" style="margin-top: 150px;opacity: 0">New to our skin care offering: <br/>hand-crafted, probiotic & <br/>Manuka Honey cleansing bars.</div>
+      </div> -->
+	  <div class="container">
+	  	<div class="col-md-12 column">
+	  		<div class="page-header">
+				<h1 class="text-center">
+					<strong>Q  &nbsp; &amp;  &nbsp; A</strong>
+				</h1>				
+			</div>
+			<div class="text-center">			
+					<p>HI, I'M THE MAYBELLINE BEAUTY ADVISOR.</p>
+					<p>HERE TO ANSWER ANY QUESTIONS YOU HAVE ABOUT OUR PRODUCTS AND SERVICES.</p>
+					<p>PLS SELECT FROM THE LIST OF QUESTION  BELOW OR SUBMIT YOUR OWN.</p>
+			</div>
+	  		<br>
+	  		<br>
+	  		<br>
+	  	</div>
+
+	  	
+		<div class="col-md-12 column">
+			<ul class="nav nav-tabs">
+				<li class="active">
+					 <span class="faq_nav" id="faqAll">ALL(<p style="display: inline;" id="faqCountAll">0</p>)</span>
+				</li>
+				<li>
+					 <span class="faq_nav" id="faqSR">SEND&amp;RETURNS(<p style="display: inline;" id="faqCountSR">0</p>)</span>
+				</li>
+				<li>
+					 <span class="faq_nav" id="faqO">OTHER(<p style="display: inline;" id="faqCountO">0</p>)</span>
+<!-- 					 <a href="#">OTHER</a> -->
+				</li>
+<!-- 				<li class="dropdown pull-right">
+					 <a class="dropdown-toggle" href="#" data-toggle="dropdown">下拉<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li>
+							 <a href="#">操作</a>
+						</li>
+						<li>
+							 <a href="#">设置栏目</a>
+						</li>
+						<li>
+							 <a href="#">更多设置</a>
+						</li>
+						<li class="divider">
+						</li>
+						<li>
+							 <a href="#">分割线</a>
+						</li>
+					</ul>
+				</li> -->
+			</ul>
+
+    		
+
+
+
+    		<div class="col-md-12 faq_item faq_hide" >
+    			<div class="faq_question ">
+    				<table style="width: 100%;">
+    				 <tbody>
+    				  <tr>
+    					<td width="20" align="center" valign="middle"><div class="faq_q_icon">Q</div></td>
+    					<td align="left" valign="middle" id="faq_question_1"></td>
+    					<td width="19" align="center" valign="middle"><div class="faq_close faq_item_btn"></div></td>
+    			  	  </tr>	
+    				 </tbody>
+    				</table>
+    	  		</div>
+    	  		<div class="faq_answer_container">
+    	  			<div class="faq_split col-md-12"></div>
+    				<div class="faq_answer">
+    				<table style="width: 100%;">
+    					<tbody><tr>
+    						<td width="20" align="center" valign="top"><img class="faq_a_icon" src="./images/faq_ask_icon.png"></td>
+    						<td align="left" valign="middle" id="faq_answer_1"></td>
+    			  			</tr></tbody>
+    			  	</table>    			
+    	  			</div>
+    			</div>
+    		</div>
+    		
+    		  <div class="col-md-12 faq_item faq_hide">
+    			<div class="faq_question ">
+    				<table style="width: 100%;">
+    				 <tbody>
+    				  <tr>
+    					<td width="20" align="center" valign="middle"><div class="faq_q_icon">Q</div></td>
+    					<td align="left" valign="middle" id="faq_question_2"></td>
+    					<td width="19" align="center" valign="middle"><div class="faq_close faq_item_btn"></div></td>
+    			  	  </tr>	
+    				 </tbody>
+    				</table>
+    	  		</div>
+    	  		<div class="faq_answer_container">
+    	  			<div class="faq_split col-md-12"></div>
+    				<div class="faq_answer">
+    				<table style="width: 100%;">
+    					<tbody><tr>
+    						<td width="20" align="center" valign="top"><img class="faq_a_icon" src="./images/faq_ask_icon.png"></td>
+    						<td align="left" valign="middle" id="faq_answer_2"></td>
+    			  			</tr></tbody>
+    			  	</table>    			
+    	  			</div>
+    			</div>
+    		</div>
+    		
+    		<div class="col-md-12 faq_item faq_hide">
+    			<div class="faq_question ">
+    				<table style="width: 100%;">
+    				 <tbody>
+    				  <tr>
+    					<td width="20" align="center" valign="middle"><div class="faq_q_icon">Q</div></td>
+    					<td align="left" valign="middle" id="faq_question_3"></td>
+    					<td width="19" align="center" valign="middle"><div class="faq_close faq_item_btn"></div></td>
+    			  	  </tr>	
+    				 </tbody>
+    				</table>
+    	  		</div>
+    	  		<div class="faq_answer_container">
+    	  			<div class="faq_split col-md-12"></div>
+    				<div class="faq_answer">
+    				<table style="width: 100%;">
+    					<tbody><tr>
+    						<td width="20" align="center" valign="top"><img class="faq_a_icon" src="./images/faq_ask_icon.png"></td>
+    						<td align="left" valign="middle" id="faq_answer_3"></td>
+    			  			</tr></tbody>
+    			  	</table>    			
+    	  			</div>
+    			</div>
+    		</div>  
+    		
+    		<div class="col-md-12 faq_item faq_hide">
+    			<div class="faq_question ">
+    				<table style="width: 100%;">
+    				 <tbody>
+    				  <tr>
+    					<td width="20" align="center" valign="middle"><div class="faq_q_icon">Q</div></td>
+    					<td align="left" valign="middle" id="faq_question_4"></td>
+    					<td width="19" align="center" valign="middle"><div class="faq_close faq_item_btn"></div></td>
+    			  	  </tr>	
+    				 </tbody>
+    				</table>
+    	  		</div>
+    	  		<div class="faq_answer_container">
+    	  			<div class="faq_split col-md-12"></div>
+    				<div class="faq_answer">
+    				<table style="width: 100%;">
+    					<tbody><tr>
+    						<td width="20" align="center" valign="top"><img class="faq_a_icon" src="./images/faq_ask_icon.png"></td>
+    						<td align="left" valign="middle" id="faq_answer_4"></td>
+    			  			</tr></tbody>
+    			  	</table>    			
+    	  			</div>
+    			</div>
+    		</div>  
+    		
+    		<div class="col-md-12 faq_item faq_hide">
+    			<div class="faq_question ">
+    				<table style="width: 100%;">
+    				 <tbody>
+    				  <tr>
+    					<td width="20" align="center" valign="middle"><div class="faq_q_icon">Q</div></td>
+    					<td align="left" valign="middle" id="faq_question_5"></td>
+    					<td width="19" align="center" valign="middle"><div class="faq_close faq_item_btn"></div></td>
+    			  	  </tr>	
+    				 </tbody>
+    				</table>
+    	  		</div>
+    	  		<div class="faq_answer_container">
+    	  			<div class="faq_split col-md-12"></div>
+    				<div class="faq_answer">
+    				<table style="width: 100%;">
+    					<tbody><tr>
+    						<td width="20" align="center" valign="top"><img class="faq_a_icon" src="./images/faq_ask_icon.png"></td>
+    						<td align="left" valign="middle" id="faq_answer_5"></td>
+    			  			</tr></tbody>
+    			  	</table>    			
+    	  			</div>
+    			</div>
+    		</div>  
+    		
+    		<div class="col-md-12 faq_item faq_hide">
+    			<div class="faq_question ">
+    				<table style="width: 100%;">
+    				 <tbody>
+    				  <tr>
+    					<td width="20" align="center" valign="middle"><div class="faq_q_icon">Q</div></td>
+    					<td align="left" valign="middle" id="faq_question_6"></td>
+    					<td width="19" align="center" valign="middle"><div class="faq_close faq_item_btn"></div></td>
+    			  	  </tr>	
+    				 </tbody>
+    				</table>
+    	  		</div>
+    	  		<div class="faq_answer_container">
+    	  			<div class="faq_split col-md-12"></div>
+    				<div class="faq_answer">
+    				<table style="width: 100%;">
+    					<tbody><tr>
+    						<td width="20" align="center" valign="top"><img class="faq_a_icon" src="./images/faq_ask_icon.png"></td>
+    						<td align="left" valign="middle" id="faq_answer_6"></td>
+    			  			</tr></tbody>
+    			  	</table>    			
+    	  			</div>
+    			</div>
+    		</div>  
+    		
+    		<div class="col-md-12 faq_item faq_hide">
+    			<div class="faq_question ">
+    				<table style="width: 100%;">
+    				 <tbody>
+    				  <tr>
+    					<td width="20" align="center" valign="middle"><div class="faq_q_icon">Q</div></td>
+    					<td align="left" valign="middle" id="faq_question_7"></td>
+    					<td width="19" align="center" valign="middle"><div class="faq_close faq_item_btn"></div></td>
+    			  	  </tr>	
+    				 </tbody>
+    				</table>
+    	  		</div>
+    	  		<div class="faq_answer_container">
+    	  			<div class="faq_split col-md-12"></div>
+    				<div class="faq_answer">
+    				<table style="width: 100%;">
+    					<tbody><tr>
+    						<td width="20" align="center" valign="top"><img class="faq_a_icon" src="./images/faq_ask_icon.png"></td>
+    						<td align="left" valign="middle" id="faq_answer_7"></td>
+    			  			</tr></tbody>
+    			  	</table>    			
+    	  			</div>
+    			</div>
+    		</div>  
+    		
+    		<div class="col-md-12 faq_item faq_hide">
+    			<div class="faq_question ">
+    				<table style="width: 100%;">
+    				 <tbody>
+    				  <tr>
+    					<td width="20" align="center" valign="middle"><div class="faq_q_icon">Q</div></td>
+    					<td align="left" valign="middle" id="faq_question_8"></td>
+    					<td width="19" align="center" valign="middle"><div class="faq_close faq_item_btn"></div></td>
+    			  	  </tr>	
+    				 </tbody>
+    				</table>
+    	  		</div>
+    	  		<div class="faq_answer_container">
+    	  			<div class="faq_split col-md-12"></div>
+    				<div class="faq_answer">
+    				<table style="width: 100%;">
+    					<tbody><tr>
+    						<td width="20" align="center" valign="top"><img class="faq_a_icon" src="./images/faq_ask_icon.png"></td>
+    						<td align="left" valign="middle" id="faq_answer_8"></td>
+    			  			</tr></tbody>
+    			  	</table>    			
+    	  			</div>
+    			</div>
+    		</div>  
+    		
+    		<div class="col-md-12 faq_item faq_hide">
+    			<div class="faq_question ">
+    				<table style="width: 100%;">
+    				 <tbody>
+    				  <tr>
+    					<td width="20" align="center" valign="middle"><div class="faq_q_icon">Q</div></td>
+    					<td align="left" valign="middle" id="faq_question_9"></td>
+    					<td width="19" align="center" valign="middle"><div class="faq_close faq_item_btn"></div></td>
+    			  	  </tr>	
+    				 </tbody>
+    				</table>
+    	  		</div>
+    	  		<div class="faq_answer_container">
+    	  			<div class="faq_split col-md-12"></div>
+    				<div class="faq_answer">
+    				<table style="width: 100%;">
+    					<tbody><tr>
+    						<td width="20" align="center" valign="top"><img class="faq_a_icon" src="./images/faq_ask_icon.png"></td>
+    						<td align="left" valign="middle" id="faq_answer_9"></td>
+    			  			</tr></tbody>
+    			  	</table>    			
+    	  			</div>
+    			</div>
+    		</div>  
+    		
+    		<div class="col-md-12 faq_item faq_hide">
+    			<div class="faq_question ">
+    				<table style="width: 100%;">
+    				 <tbody>
+    				  <tr>
+    					<td width="20" align="center" valign="middle"><div class="faq_q_icon">Q</div></td>
+    					<td align="left" valign="middle" id="faq_question_10"></td>
+    					<td width="19" align="center" valign="middle"><div class="faq_close faq_item_btn"></div></td>
+    			  	  </tr>	
+    				 </tbody>
+    				</table>
+    	  		</div>
+    	  		<div class="faq_answer_container">
+    	  			<div class="faq_split col-md-12"></div>
+    				<div class="faq_answer">
+    				<table style="width: 100%;">
+    					<tbody><tr>
+    						<td width="20" align="center" valign="top"><img class="faq_a_icon" src="./images/faq_ask_icon.png"></td>
+    						<td align="left" valign="middle" id="faq_answer_10"></td>
+    			  			</tr></tbody>
+    			  	</table>    			
+    	  			</div>
+    			</div>
+    		</div>  
+ 		 	
+     		 	
+    	 	<div class="col-md-12">
+    			<table style="width:100%" class="col-md-12">
+    				<tbody style="width:100%">
+    					<tr style="width:100%">
+    						<td style="display:inline-block;width:20%;float:left;height:80px;padding-top:20px;"><span id="prevpage"><img style="width:10%;" src="./images/svg/left_page.svg"></span></td>
+    						<td style="display:inline-block;width:60%;float:left;" align="center">
+    							<ul class="pagination" id="pagination" currpage="1">
+<!--     								<li><a href="#">1</a></li>
+    								<li><a href="#">2</a></li> -->
+    							</ul>
+    						</td>
+    						<td style="display:inline-block;width:20%;float:right;height:80px;padding-top:20px;"><span id="nextpage"><img style="float:right;width:10%;" src="./images/svg/right_page.svg"></span></td>
+<!-- 							<td><a class="faq_right_button"></a></td> -->
+    					</tr>
+    				</tbody>
+    			</table>
+    		</div> 	
+
+		</div>
+
+    <div id="page1b" class="col-md-8 col-md-offset-2" style="display:block">
+    	<div class="text-center">
+    		<br>
+    		<p>IF YOU AREN'T SATISFIED WITH THE ANSWERS,</p>
+    		<p>PLEASE CONTACT WITH OUR CUSTOMER SERVICE:</p>
+    		<p>SERVICE HOTLINE:</p>
+    		
+    	</div>
+    	<form role="form" id ="QAform"  method="post">
+    		<br>
+    		<br>
+			<div class="form-group col-md-6">
+				<label for="">姓名</label>
+				<input class="form-control" id="name" name="name">
+			</div>
+
+			<div class="form-group col-md-6">
+				<label for="">郵箱</label>
+				<input class="form-control"  id="email" name="email" type="email">
+			</div>
+
+			<div class="form-group col-md-12">
+<!-- 				<div class="form-group col-md-6" style="padding-left: 0px"> -->
+				<label for="">問題類型</label>
+				<select class="form-control" id="question_type" name="question_type">
+					<option>請選擇</option>	
+<!-- 					<option> 手工皂</option>
+					<option> 面膜</option>	 -->				
+				</select>
+<!-- 				</div> -->
+			</div>
+			
+			<div class="form-group col-md-12">
+				<label for="">描述信息</label> <span style="float: right"> 剩余字符数：<span id="count">1000</span></span>
+				<textarea class=" form-control col-md-12" rows="10" id="desc" name="desc"></textarea>
+				<label class="error" style="width:100%" id="desc-error" for="desc"></label>
+			</div>
+			<div><label id="errormessage1" class="error_system"></label></div>
+			<div class="col-md-8 col-md-offset-4">
+				<button class="sub_button2" id = "reset" type="reset">重置</button>
+				<button class="sub_button2" id = "submit" type="submit">提交</button>
+			</div>
+
+		</form>
+    </div>	 
+	 
+	  
+	 </div>	
+	
+	
+
+ 
+
+
+
+
+
+
+
+    <footer class="footer hidden-xs hidden-sm">
+      <ul class="footer_list clearfix">
+        <li>
+          <span class="animated">ABOUT BeMoral</span>
+          <ul>
+            <li><a class="animated" href="#">關於我們</a></li>
+            <li><a class="animated" href="#">藝術家合作</a></li>
+            <li><a class="animated" href="#">最新產品</a></li>
+            <li><a class="animated" href="#">線上條款</a></li>
+            <li><a class="animated" href="#">工作機會</a></li>
+            <li><a class="animated" href="new_list.html?language=tc&preview=2">新聞資訊</a></li>
+          </ul>
+        </li>
+        <li style="margin-left: 130px;margin-right: 150px;">
+          <span class="animated">MY  BeMoral</span>
+          <ul>
+              <li><a class="animated" id="myAccount">我的賬號</a></li>
+              <li><a class="animated" id="myCollect">我的收藏</a></li>
+              <li><a class="animated" id="myHistory">歷史訂單</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="animated">HELP&amp;FAQ</span>
+          <ul>
+            <li><a class="animated" href="contact_us.html">聯繫我們</a></li>
+            <li><a class="animated" href="#">客戶服務</a></li>
+            <li><a class="animated" href="#">派送信息</a></li>
+          </ul>
+        </li>
+
+        <div class="search_box animated">
+          <input class="search_kuang" type="text" name="search" placeholder="FIND PRODUCT"/>
+          <div class="search_button1"></div>
+        </div>
+        
+      </ul>
+
+      <div class="copy_right hidden-xs hidden-sm animated">隱私政策 | 服務條款<span>©2018BeMoral. ALL RIGHTS RESERVED</span></div>
+    </footer>
+    <footer class="footer hidden-lg hidden-md" style="z-index: 2;position: relative;margin-top: 1px;">
+      <div class="nav_list1" style="display: none;">
+        <ul id="bottom_menu_m" class="menu_m animated" style="opacity: 0;">
+          <li>
+          	<a>about BeMoral</a>
+	          <ul>
+	            <li><a href="#">關於我們</a></li>
+	            <li><a href="#">藝術家合作</a></li>
+	            <li><a href="#">最新產品</a></li>
+	            <li><a href="#">線上條款</a></li>
+	            <li><a href="#">工作機會</a></li>
+	            <li><a href="new_list.html?language=tc&preview=2">新聞資訊</a></li>
+	          </ul>
+			</li>
+          <li>
+          	<a>MY BeMoral</a>
+          	  <ul>
+                  <li><a id="myAccount">我的賬號</a></li>
+                  <li><a id="myCollect">我的收藏</a></li>
+                  <li><a id="myHistory">歷史訂單</a></li>
+	          </ul>
+          </li>
+          <li>
+          	<a>help &amp; faq</a>
+	          <ul>
+	            <li><a href="contact_us.html">聯繫我們</a></li>
+	            <li><a href="#">客戶服務</a></li>
+	            <li><a href="#">派送信息</a></li>
+	          </ul>
+			</li>
+        </ul>
+      </div>
+      <div class="bottom_one">
+        <input type="text" name="" class="send_message" placeholder="輸入你的郵箱可了解更多" />
+        <div class="send_btn"></div>
+        <div class="nav_button1">
+          <span class="nav_left1"></span>
+        </div>
+        <div class="nav_button1">
+          <span class="nav_right1"></span>
+        </div>
+      </div>
+      <img class="icons_m" src="images_m/icons.png" />
+      <div class="copy_right_m">©2018BeMoral. ALL RIGHTS RESERVED</div>
+    </footer>
+  </div>
+  </div>
+</body>
+</html>

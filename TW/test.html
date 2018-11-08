@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="utf-8">
+  <title>BeMoral</title>  
+  <script src="js/jquery-1.11.min.js" type="text/javascript"></script>
+</head>
+<body>
+<script>
+//verify and set Cookie
+//API license may required
+var language = getCookie("language");
+if (language == null || language == ""){
+	
+	$.getJSON("https://api.ipify.org?format=json",function(data){
+		console.log("IP API :",data);
+		setCookie('ip',data.ip,365);
+	});		
+				
+	$.get("https://ipinfo.io?token=e91bf74de6916b", function(response) {
+		console.log(response);
+		setCookie('ip',response.ip,365);
+ 		setlanguage(null,response.country);
+//		var language = getCookie("language");
+// 		setlanguage(language,null); 
+		setCookie('countryCode',response.country,365);
+		if (response.country == "TW"){
+			setCookie("isLand","0",365);
+		}else{
+			setCookie("isLand","1",365);
+		}
+	}, "jsonp");		
+	
+}
+
+var language = getCookie("language");
+
+if (language=="tc"){
+	window.location.href="index.html";
+} else if(language=="sc"){
+	window.location.href="Login.html";
+} else if(language=="en"){
+	window.location.href="QA.html";
+}
+
+//Cookie ...
+function setCookie(cname,cvalue,exdays){
+	var d = new Date();
+	d.setTime(d.getTime()+(exdays*24*60*60*1000));
+	var expires = "expires="+d.toGMTString();
+	document.cookie = cname+"="+cvalue+"; "+expires;
+}
+
+function getCookie(cname){
+	var name = cname + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i<ca.length; i++) {
+		var c = ca[i].trim();
+		if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+	}
+	return "";
+}
+// end of Cookie
+
+//set up language and language cookie
+function setlanguage(language,country){
+	if (language != null){
+		if (language == "sc"){
+			$(".lang_change").text("CN");			
+			$(".lang_choose").prepend($(".lang_choose").find("li:contains(CN)"));
+		}else if (language == "tc"){
+			$(".lang_change").text("TW");			
+			$(".lang_choose").prepend($(".lang_choose").find("li:contains(TW)"));
+		}else if (language == "en"){			
+			$(".lang_change").text("EN");			
+			$(".lang_choose").prepend($(".lang_choose").find("li:contains(EN)"));
+		}
+	}else if (country != null){
+		if (country == "CN"){
+			setCookie('language','sc',365);
+		} else if(country == "TW"){
+			setCookie('language','tc',365);
+		} else{
+			setCookie('language','en',365);
+		}
+	}
+}
+
+
+</script>
+</body>
+</html>
